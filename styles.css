@@ -6,6 +6,10 @@
     color: white;
 }
 
+body{
+    background-color: blanchedalmond;
+}
+
 .flex-center{
     display:flex;
     justify-content: center;
@@ -18,6 +22,7 @@
     width: 303px;
     padding: 32px 18px;
     border-radius: 12px;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.82);
 }
 
 button{
@@ -52,4 +57,8 @@ button{
 
 .buttons button.zero{
     flex: 1 0 auto;
+}
+
+.buttons .ac{
+    background-color: rgb(255, 74, 74);
 }
