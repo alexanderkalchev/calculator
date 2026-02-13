@@ -51,15 +51,17 @@ buttons.addEventListener("click", e => {
         display.innerText = display.innerText.length === 1 ? "0" : display.innerText.slice(0, display.innerText.length - 1);
     }
     if(e.target.classList.contains("operation")){
-        if(!num1){
+        if(num1 === null){
             if(e.target.innerText !== "="){
                 num1 = Number(display.innerText);
                 operation = e.target.innerText;
                 toClean = true;
+                console.log(num1);
             }
         }
         else{
             num2 = Number(display.innerText);
+            console.log(num2);
             display.innerText = evaluate(num1, num2, operation)
             num1 = null;
             num2 = null;
